@@ -29,14 +29,14 @@ print(pic_arr)
 # use slicing to set the RED and GREEN channels of the picture to 0, then use imshow() to show the isolated blue channel
 pic_arr1 = pic_arr
 pic_arr1[:, :, 0] = 0  # red channel converted to 0
-result = Image.fromarray(pic_arr1.astype(np.uint8))
-result.save('../data/zebra_Greenblue.jpeg')
+result1 = Image.fromarray(pic_arr1.astype(np.uint8))
+result1.save('../data/zebra_Greenblue.jpeg')
 plt.imshow(pic_arr1)
 plt.show()
 
 pic_arr1[:, :, 1] = 0  # green channel converted to 0
-result = Image.fromarray(pic_arr1.astype(np.uint8))
-result.save('../data/zebra_blue.jpeg')
+result2 = Image.fromarray(pic_arr1.astype(np.uint8))
+result2.save('../data/zebra_blue.jpeg')
 
 plt.imshow(pic_arr1)
 plt.show()
