@@ -29,7 +29,7 @@ print(pic_arr)
 # use slicing to set the RED and GREEN channels of the picture to 0, then use imshow() to show the isolated blue channel
 pic_arr1 = pic_arr
 pic_arr1[:, :, 0] = 0  # red channel converted to 0
-pic_arr1[:, :, 2] = 0  # green channel converted to 0
+pic_arr1[:, :, 1] = 0  # green channel converted to 0
 
 plt.imshow(pic_arr1)
 plt.show()
